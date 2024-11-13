@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universidad UnADM - Carrusel Interactivo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="ocultarTextoDescriptivo()">
+    <div class="container">
+        <h1>Universidad UnADM</h1>
+
+        <!-- Contenedor del Carrusel -->
+        <div class="carrusel">
+            <img id="imagen-carrusel" src= https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAGokxwFa2g7sY_w8DqiWtGiULPxcb7jajiw&s.jpg" alt="Imagen del Carrusel" 
+                 onmouseover="agrandarImagen()" 
+                 onmouseout="reducirImagen()" 
+                 onclick="mostrarTextoDescriptivo()">
+            <p id="descripcion-imagen"></p>
+        </div>
+    </div>
+
+    <!-- Archivo JavaScript externo -->
+    <script src="assets/js/carrusel.js"></script>
+</body>
+</html>
